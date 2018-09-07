@@ -1,24 +1,14 @@
 name "keepup"
-targetType "none"
 description "A command-line task manager"
 authors "araspik"
 copyright "Copyright © 2018, araspik"
 license "MIT"
 
-dependency "keepup:library" version="*"
-dependency "keepup:executable" version="*"
+// The actual application. The primary package is a library.
+subPackage "app"
 
-subPackage {
-  name "library"
-  targetType "library"
-  dependency "sdlang-d" version="~>0.10.4"
-  sourcePaths "source"
-}
+targetType "library"
+sourcePaths "keepup"
+importPaths "."
 
-subPackage {
-  name "executable"
-  targetType "executable"
-  dependency "keepup:library" version="*"
-  sourcePaths "src/keepup"
-  importPaths "src"
-}
+dependency "sdlang-d" version="~>0.10.4"

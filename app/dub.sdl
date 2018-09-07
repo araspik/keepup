@@ -1,0 +1,9 @@
+name "app"
+description "keepup task manager application"
+authors "araspik"
+copyright "Copyright © 2018, araspik"
+license "MIT"
+
+targetType "executable"
+dependency "keepup" version="*"
+sourcePaths "."
