@@ -1,0 +1,14 @@
+.dub
+docs.json
+__dummy.html
+docs/
+keepup.so
+keepup.dylib
+keepup.dll
+keepup.a
+keepup.lib
+keepup-test-*
+*.exe
+*.o
+*.obj
+*.lst
